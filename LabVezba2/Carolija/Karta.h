@@ -20,7 +20,7 @@ public:
 	unsigned int getID() const;
 	virtual void useCard(Igrac* controller, Igrac* opponent) const = 0; // apstraktna
 	virtual Category getCategory() const = 0; // apstraktna
-	virtual int getPower() const = 0; // apstraktna
+	virtual int getPower() const = 0; // apstraktna, mora da postoji kako bismo mogli preko pokazivaca na kartu da je pozivamo
 	friend std::ostream& operator<<(std::ostream& os, const Karta&);
 	friend class Zbirka;
 protected:

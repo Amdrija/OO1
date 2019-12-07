@@ -19,9 +19,13 @@ public:
 	void send(Obavestenje* notification, Korisnik* receiver) const;
 	void receive(Obavestenje* notification);
 	ListaObavestenja& getNotifications();
+	//ne moze da bude const jer vraca referencu na promenljivu lvrednost
+	//pa onda dalje u programu mozemo da koristimo tu referencu
 private:
 	std::string username;
 	ListaObavestenja notifications;
+	//Koristimo da je lista obavestenja u korisnku, jer nema smisla da postoje obavestenja
+	//koja nikoga ne obavestavaju
 };
 #endif
 

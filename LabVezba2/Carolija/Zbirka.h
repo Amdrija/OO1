@@ -26,6 +26,7 @@ public:
 	//ne bismo mogli da menjamo kartu
 	Karta* operator[](int index);
 	Karta* operator[](unsigned int ID);
+	//ova 2 dole su da bi mogli da ih zovemo za cont objekte
 	const Karta* operator[](int index) const;
 	const Karta* operator[](unsigned int ID) const;
 	void operator()(int index);
